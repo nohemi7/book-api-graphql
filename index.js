@@ -1,8 +1,10 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const { buildSchema } = require('graphql');
+const db = require('./database');
 
 // Define a schema
+// for now I will use dummy data until I refresh SQL and design schema
 
 // Init express app
 const app = express();
