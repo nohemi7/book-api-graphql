@@ -11,6 +11,7 @@ let db = new sqlite3.Database('book-log.db', (err) => {
         /*
         CREATE TABLE books (
             id INT PRIMARY KEY,
+            ISBN INT,
             title TEXT,
             author_id INT FOREIGN KEY REFERENCES authors(id),
             qty INT)
